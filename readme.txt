@@ -1,0 +1,1 @@
+这是一个测试spring cloud config的微服务配置文件项目
