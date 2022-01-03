@@ -1,6 +1,6 @@
 server:
   port: 9001
-foo: foo version 1.0.101
+foo: foo version 1.0.103
 eureka:
   client:
     fetch-registry: true
