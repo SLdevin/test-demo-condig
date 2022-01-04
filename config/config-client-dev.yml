@@ -1,13 +1,18 @@
 server:
   port: 9001
-foo: foo version 1.0.103
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8000/eureka/
-  instance:
-    #    hostname: localhost
-    prefer-ip-address: true # 用户是否显示主机的IP
-    lease-renewal-interval-in-seconds: 5 # 配置向Eureka Server发送周期性的心跳，默认是每5秒
+foo: foo version 1.0.0104
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
+# eureka:
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: http://localhost:8000/eureka/
+#   instance:
+#     #    hostname: localhost
+#     prefer-ip-address: true # 用户是否显示主机的IP
+#     lease-renewal-interval-in-seconds: 5 # 配置向Eureka Server发送周期性的心跳，默认是每5秒
